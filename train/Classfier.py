@@ -43,6 +43,7 @@ class SimpleMLP(nn.Module):
         out = self.relu(out)
         out = self.fc2(out)
         return out
+
 def train(train_loader, model, criterion, optimizer, epochs):
     #model.train()
     for epoch in range(epochs):
